@@ -27,6 +27,7 @@
         </a>
         <div class="nav-links">
           <a href="#how">How it works</a>
+          <a href="#agent-consent">Agent consent</a>
           <a href="#patent">Patent</a>
           <a href="#developers">Developers</a>
           <a href="https://github.com/justpass-me" target="_blank" rel="noreferrer">GitHub</a>
@@ -136,6 +137,40 @@
           <article><span>01</span><div class="step-icon">⌘</div><h3>Go browserless on mobile</h3><p>Deliver native iOS and Android passkey authentication without redirecting people into a browser or webview.</p></article>
           <article><span>02</span><div class="step-icon">◇</div><h3>Upgrade social login</h3><p>Add passkey registration and authentication alongside the social identity providers customers already use.</p></article>
           <article class="step-featured"><span>03</span><div class="step-icon">✓</div><h3>Build complete OIDC flows</h3><p>Support registration, challenge, verification, and secure session issuance through OpenID-compatible infrastructure.</p></article>
+        </div>
+      </section>
+
+      <section class="agent-consent shell" id="agent-consent" aria-labelledby="agent-consent-heading">
+        <div class="agent-consent-intro">
+          <p class="kicker">Agent consent</p>
+          <h2 id="agent-consent-heading">Let agents act.<br />Keep people in control.</h2>
+          <p>
+            Use passkeys and OpenID protocols to capture human approval for a
+            specific agent action—then bind that consent to the agent, audience,
+            expiry, and approved terms.
+          </p>
+        </div>
+        <div class="consent-flow" aria-label="Agent consent authentication flow">
+          <article>
+            <span class="consent-step">01</span>
+            <div class="consent-icon" aria-hidden="true">AI</div>
+            <h3>Agent proposes</h3>
+            <p>The agent prepares an action with clear, immutable terms for review.</p>
+          </article>
+          <span class="flow-arrow" aria-hidden="true">→</span>
+          <article>
+            <span class="consent-step">02</span>
+            <div class="consent-icon" aria-hidden="true">✓</div>
+            <h3>Human approves</h3>
+            <p>A trusted consent screen asks the person to approve with a passkey.</p>
+          </article>
+          <span class="flow-arrow" aria-hidden="true">→</span>
+          <article>
+            <span class="consent-step">03</span>
+            <div class="consent-icon" aria-hidden="true">OIDC</div>
+            <h3>Verifier enforces</h3>
+            <p>An OpenID-compatible authorization proves what was approved. Changed terms require fresh consent.</p>
+          </article>
         </div>
       </section>
 
